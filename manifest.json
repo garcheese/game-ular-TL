@@ -54,5 +54,12 @@
     }
   },
   "related_applications": [],
-  "scope_extensions": []
+  "scope_extensions": [],
+   "display_override": [
+    "browser",
+    "fullscreen",
+    "minimal-ui",
+    "standalone",
+    "window-controls-overlay"
+  ]
 }
