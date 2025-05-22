@@ -1,0 +1,72 @@
+/* style.css */
+
+/* Style dasar halaman */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fe8989, #ffd666);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style container game */
+#startScreen, #gameScreen {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Input dan Select */
+input[type="text"], select {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Semua Tombol */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff5722;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+/* Style untuk Canvas */
+#gameCanvas {
+  border: 4px dashed #333;
+  background-color: #fffdf6;
+  margin-top: 20px;
+}
+
+/* Skor */
+#score, #highScore {
+  font-weight: bold;
+}
+
+/* Pesan Game Over */
+#gameOverMessage {
+  color: red;
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Class Hidden */
+.hidden {
+  display: none;
+}

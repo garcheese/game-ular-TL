@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icon-192.png" />
+  </head>
+  <body>
+    <div id="startScreen">
+      <h1>🐍 Snake Game</h1>
+      <label for="username">Masukkan Nama Pengguna:</label><br />
+      <input
+        type="text"
+        id="username"
+        placeholder="Masukkan nama..."
+      /><br /><br />
+      <label for="level">Pilih Level:</label><br />
+      <select id="level">
+        <option value="200">Mudah</option>
+        <option value="120">Susah</option>
+        <option value="80">Tra Gampang</option></select
+      ><br /><br />
+      <button id="startBtn">Mulai</button>
+    </div>
+
+    <div id="gameScreen" class="hidden">
+      <h1>🐍 Snake Game</h1>
+      <p>Nama Pengguna: <span id="usernameDisplay"></span></p>
+      <p>Skor: <span id="score">0</span></p>
+      <p>Skor Tertinggi: <span id="highScore">0</span></p>
+      <canvas id="gameCanvas" width="300" height="300"></canvas>
+      <div id="touchControls" style="margin-top: 20px; text-align: center">
+        <button id="upBtn" style="font-size: 24px; padding: 10px 20px">
+          ⬆️</button
+        ><br />
+        <button
+          id="leftBtn"
+          style="font-size: 24px; padding: 10px 20px; margin-right: 20px"
+        >
+          ⬅️
+        </button>
+        <button id="downBtn" style="font-size: 24px; padding: 10px 20px">
+          ⬇️
+        </button>
+        <button
+          id="rightBtn"
+          style="font-size: 24px; padding: 10px 20px; margin-left: 20px"
+        >
+          ➡️
+        </button>
+      </div>
+
+      <div id="gameOverMessage" class="hidden">Mati ya? Kasian 😢</div>
+      <br />
+      <button id="restartBtn">Restart</button>
+      <button id="homeBtn">Menu Utama</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("service-worker.js")
+            .then((reg) =>
+              console.log("✅ Service Worker terdaftar:", reg.scope)
+            )
+            .catch((err) =>
+              console.log("❌ Gagal daftar Service Worker:", err)
+            );
+        });
+      }
+    </script>
+  </body>
+</html>
