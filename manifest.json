@@ -11,7 +11,7 @@
   "lang": "id-ID",
   "dir": "ltr",
   "categories": ["games", "entertainment", "arcade"],
-  "iarc_rating_id": "240211", 
+  "iarc_rating_id": "GameUlarTL", 
   "prefer_related_applications": false,
   "launch_handler": {
     "client_mode": "navigate-existing"
