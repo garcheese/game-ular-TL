@@ -66,6 +66,10 @@ button:hover {
   font-weight: bold;
 }
 
+/*icons*/
+#icons{
+  icon-512x512.png
+}
 /* Class Hidden */
 .hidden {
   display: none;
