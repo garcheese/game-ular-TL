@@ -10,8 +10,9 @@
   "scope": "/game-ular-TL/",
   "lang": "id-ID",
   "dir": "ltr",
+  "id": "2240211",
   "categories": ["games", "entertainment", "arcade"],
-  "iarc_rating_id": "GameUlarTL", 
+  "iarc_rating_id": "e10plus", 
   "prefer_related_applications": false,
   "launch_handler": {
     "client_mode": "navigate-existing"
