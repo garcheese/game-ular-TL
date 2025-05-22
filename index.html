@@ -8,6 +8,17 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="icon" href="icon-192.png" />
   </head>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .then(() => console.log("Service Worker registered"))
+          .catch((err) => console.error("Service Worker error:", err));
+      });
+    }
+  </script>
+
   <body>
     <div id="startScreen">
       <h1>🐍 Snake Game</h1>
