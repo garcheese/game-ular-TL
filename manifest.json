@@ -1,22 +1,46 @@
 {
   "name": "Game Ular TL",
   "short_name": "UlarTL",
-  "start_url": "./index.html",
+  "start_url": "/game-ular-TL/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4caf50",
   "orientation": "portrait",
-  "description": "Game ular klasik buatan sendiri oleh garcheese!",
+  "description": "Game ular sederhana buatan sendiri. Mainkan dan capai skor tertinggi!",
+  "scope": "/game-ular-TL/",
+  "lang": "id-ID",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "/game-ular-TL/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "/game-ular-TL/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "screenshots": [
+    {
+      "src": "/game-ular-TL/screenshots/screenshot1.png",
+      "type": "image/png",
+      "sizes": "640x360"
+    },
+    {
+      "src": "/game-ular-TL/screenshots/screenshot2.png",
+      "type": "image/png",
+      "sizes": "640x360"
+    }
+  ],
+  "share_target": {
+    "action": "/game-ular-TL/share.html",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "name",
+      "text": "description",
+      "url": "link"
+    }
+  }
 }
