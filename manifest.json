@@ -18,19 +18,17 @@
     "client_mode": "navigate-existing"
   },
   "icons": [
-    {
-      "src": "/game-ular-TL/icons/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/game-ular-TL/icons/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    }
-  ],
+  {
+    "src": "icons/icon-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+    "src": "icons/icon-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+],
   "screenshots": [
     {
       "src": "/game-ular-TL/screenshots/screenshot1.png",
